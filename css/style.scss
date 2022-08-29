@@ -1,0 +1,59 @@
+/* Global Variables */
+$priColor: rgb(207, 31, 95); // game box color // Title Background, Item Background
+$priHoverColor: #f00;
+$lightColor: #ddd; // text color // Body Background, Body Color, 
+$lightHoverColor: #fff;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blue {
+    color: #00f;
+}
+.gray {
+    color: #444;
+}
+
+body {
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $lightColor;
+    color: $lightColor;
+}
+
+.container {
+    width: 270px;
+    margin: auto;
+    text-align: center;
+    font-family: system-ui;
+    margin: auto;
+    .title {
+        background-color: $priColor;
+        padding: 0.5rem 0;
+    }
+    .game-container {
+        width: 100%;
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        .item {
+            height: 5rem;
+            width: 5rem;
+            background-color: $priColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            &:hover {
+                color: $lightHoverColor;
+                background-color: $priHoverColor;
+                cursor: pointer;
+            }
+        }
+    }
+}

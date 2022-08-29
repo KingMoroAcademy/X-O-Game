@@ -1,0 +1,54 @@
+/* Global Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blue {
+  color: #00f;
+}
+
+.gray {
+  color: #444;
+}
+
+body {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ddd;
+  color: #ddd;
+}
+
+.container {
+  width: 270px;
+  margin: auto;
+  text-align: center;
+  font-family: system-ui;
+  margin: auto;
+}
+.container .title {
+  background-color: rgb(207, 31, 95);
+  padding: 0.5rem 0;
+}
+.container .game-container {
+  width: 100%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+.container .game-container .item {
+  height: 5rem;
+  width: 5rem;
+  background-color: rgb(207, 31, 95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.container .game-container .item:hover {
+  color: #fff;
+  background-color: #f00;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
